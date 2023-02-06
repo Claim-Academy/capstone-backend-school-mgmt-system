@@ -56,7 +56,7 @@ This concept is inspired by the very nice spreadsheet set up by Elias here at Cl
 
 ## Data Sample and Schema
 
-I am favoring an embedded document approach for this project. It also makes it easier to query the data. This is the **general** approach that is used in MongoDB for small data sets.
+I am favoring an [embedded document approach](https://www.mongodb.com/basics/embedded-mongodb) for this project. It also makes it easier to query the data. This is the **general** approach that is used in MongoDB for small data sets.
 
 We have three collections: `classes`, `teachers`, and `students`. Teachers are duplicated in the classes. As this is not SQL, duplicated data in MongoDB is still favored over using `$lookup` and **joins.**
 
