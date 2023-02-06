@@ -487,8 +487,8 @@ const gradeSchema = new mongoose.Schema({
 const studentSchema = new mongoose.Schema({
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
-  attendance: [AttendanceSchema],
-  grades: [GradeSchema],
+  attendance: [attendanceSchema],
+  grades: [gradeSchema],
 });
 
 const userSchema = new mongoose.Schema({
@@ -503,8 +503,8 @@ const userSchema = new mongoose.Schema({
 const classSchema = new mongoose.Schema({
   name: { type: String, required: true },
   description: { type: String, required: true },
-  teacher: TeacherSchema,
-  students: [StudentSchema],
+  teacher: teacherSchema,
+  students: [studentSchema],
 });
 ```
 
