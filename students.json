@@ -1,0 +1,1772 @@
+[
+  {
+    "_id": "96cbffbf-4e94-40b2-b72e-31d1eb0644f4",
+    "firstName": "Alba",
+    "lastName": "Mante",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 5,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 20,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 28,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "4c8d99da-bd20-4cf3-bcfd-76833cbdeccb",
+    "firstName": "Jefferey",
+    "lastName": "Kulas",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 5,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 12,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 41,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "c11bb91a-3a38-4690-b6be-8d565e13865d",
+    "firstName": "Thelma",
+    "lastName": "Raynor",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 17,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 29,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "67e65487-0ec8-4bdd-8aa5-06925ee8273e",
+    "firstName": "Cecile",
+    "lastName": "Hudson",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 6,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 18,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 43,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "d227599c-d56e-418e-a419-09bedd753f8c",
+    "firstName": "Era",
+    "lastName": "Beier",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 6,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 18,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 49,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "5c900785-ac72-4188-ab01-9889a574e8e9",
+    "firstName": "Jimmie",
+    "lastName": "White",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 13,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 20,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "0a767a77-ff63-49f3-9947-97a0ab0aa79f",
+    "firstName": "Kassandra",
+    "lastName": "Reynolds",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 10,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 32,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "4e7a756f-c3bb-43b0-ad27-794290eeec8d",
+    "firstName": "Ayla",
+    "lastName": "Kovacek",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 6,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 11,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 50,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "3fe69001-9d76-4634-aae7-b93325845425",
+    "firstName": "Euna",
+    "lastName": "Torp",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 5,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 17,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 31,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "996e1881-20f8-4740-aed0-018b8b4d25b2",
+    "firstName": "Edythe",
+    "lastName": "Lubowitz",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 13,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 30,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "6583ca74-8438-4ad6-842d-b3722200f4ac",
+    "firstName": "Mathilde",
+    "lastName": "Mraz",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 5,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 14,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 34,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "53461b94-77ee-4dc6-bb63-3b1f47e17a87",
+    "firstName": "Abdul",
+    "lastName": "Jacobi",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 15,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 50,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "445c72c6-2f6b-4895-b859-a0ae156fcf10",
+    "firstName": "Charles",
+    "lastName": "Wolff",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 6,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 12,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 21,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "54fab78a-3f7c-4ed0-9678-53b60c3ad1d7",
+    "firstName": "Emmanuelle",
+    "lastName": "Koss",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 6,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 17,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 22,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "22570be2-5643-4dad-a808-29e3af1867d3",
+    "firstName": "Lourdes",
+    "lastName": "Anderson",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 19,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 42,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "3f180124-24ba-4075-939d-ac12c6b24076",
+    "firstName": "Ismael",
+    "lastName": "Bogan",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 20,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 22,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "c44549b4-fa88-48fb-b689-255a0531e2cd",
+    "firstName": "Alfred",
+    "lastName": "Rolfson",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 5,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 19,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 43,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "844a7edf-dd7a-489c-8f5e-9141c8f3d292",
+    "firstName": "Ahmad",
+    "lastName": "Carter",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 5,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 6,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 6,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 19,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 35,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "6e625cf9-7cb3-4065-8497-e63fce603610",
+    "firstName": "Lamar",
+    "lastName": "Corkery",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 5,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 11,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 48,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "1e7f9572-baa1-4992-b535-aa3fa3f9f11f",
+    "firstName": "Gilbert",
+    "lastName": "Ankunding",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 6,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 20,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 39,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "1deb8dcf-7c61-4649-b015-084918ee4ff2",
+    "firstName": "Nola",
+    "lastName": "Abshire",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 5,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 6,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 18,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 34,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "a1659e6a-ca85-4996-aa71-33bf31e6f12b",
+    "firstName": "Carter",
+    "lastName": "Cummerata",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 15,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 33,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "d892cb2c-7349-417e-9ddd-655213ab60aa",
+    "firstName": "Caleigh",
+    "lastName": "Auer",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 5,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 13,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 33,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "52240998-4039-408f-be3b-67cf3148c2a9",
+    "firstName": "Dallas",
+    "lastName": "Lakin",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 15,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 43,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "d16839ef-e4e5-432c-9409-c0766876072d",
+    "firstName": "Samanta",
+    "lastName": "Reynolds",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 7,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 6,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 14,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 47,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "667dfcea-809b-404e-a3e0-2f77f2e2a2ab",
+    "firstName": "Leonard",
+    "lastName": "Bashirian",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 20,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 47,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "e23c40ff-f43a-4051-82f3-fa2d352544f4",
+    "firstName": "Morgan",
+    "lastName": "Stanton",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 5,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 14,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 43,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "9e215dee-6d3e-4058-b906-6500fd25a063",
+    "firstName": "Brendan",
+    "lastName": "Stark",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 20,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 43,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "396988e2-ad4d-4f08-9230-841b25dea8cf",
+    "firstName": "Juvenal",
+    "lastName": "Harris",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 6,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 5,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 5,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 11,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 47,
+        "possible": 50
+      }
+    ]
+  },
+  {
+    "_id": "8b9762ec-2cca-48b3-9730-cac97860c2b1",
+    "firstName": "Major",
+    "lastName": "Metz",
+    "present": [
+      {
+        "date": "2022-01-09",
+        "present": "Excused Absence"
+      },
+      {
+        "date": "2022-01-10",
+        "present": "Left Early"
+      },
+      {
+        "date": "2022-01-11",
+        "present": "Late"
+      },
+      {
+        "date": "2022-01-12",
+        "present": "Present"
+      },
+      {
+        "date": "2022-01-13",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-09",
+        "earned": 8,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-10",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-11",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Quiz 1",
+        "date": "2020-01-12",
+        "earned": 10,
+        "possible": 20
+      },
+      {
+        "name": "Exam 1",
+        "date": "2020-01-13",
+        "earned": 43,
+        "possible": 50
+      }
+    ]
+  }
+]
