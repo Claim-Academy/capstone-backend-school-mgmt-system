@@ -56,9 +56,9 @@ This concept is inspired by the very nice spreadsheet set up by Elias here at Cl
 
 ## Data Sample and Schema
 
-I am favoring an embedded document approach for this project. This is because the data is highly relational and it is easier to manage the data this way. It also makes it easier to query the data. This is the **general** approach that is used in MongoDB for small data sets.
+I am favoring an embedded document approach for this project. It also makes it easier to query the data. This is the **general** approach that is used in MongoDB for small data sets.
 
-We have two collections: `classes` and `teachers`. Teachers are duplicated in the classes. As this is not SQL, duplicated data in MongoDB is still favored over using `$lookup` and **joins.**
+We have three collections: `classes`, `teachers`, and `students`. Teachers are duplicated in the classes. As this is not SQL, duplicated data in MongoDB is still favored over using `$lookup` and **joins.**
 
 ### Sample Data
 
@@ -99,6 +99,28 @@ We have two collections: `classes` and `teachers`. Teachers are duplicated in th
             "date": "2020-01-02",
             "present": "Excused Absence"
           }
+        ],
+        "grades": [
+          {
+            "name": "Homework 1",
+            "date": "2020-01-01",
+            "earned": 10,
+            "possible": 10
+          },
+          {
+            "name": "Homework 2",
+            "date": "2020-01-02",
+            "earned": 9,
+            "possible": 10
+          },
+          {
+            "name": "Homework 3",
+            "date": "2020-01-03",
+            "earned": 8,
+            "possible": 10
+          },
+          {"name": "Quiz 1", "date": "2020-01-04", "earned": 18, "possible": 20 },
+          {"name": "Exam 1", "date": "2020-01-05", "earned": 40, "possible": 50}
         ]
       },
       {
@@ -112,6 +134,28 @@ We have two collections: `classes` and `teachers`. Teachers are duplicated in th
             "date": "2020-01-02",
             "present": "Unexcused Absence"
           }
+        ],
+        "grades": [
+          {
+            "name": "Homework 1",
+            "date": "2020-01-01",
+            "earned": 10,
+            "possible": 10
+          },
+          {
+            "name": "Homework 2",
+            "date": "2020-01-02",
+            "earned": 9,
+            "possible": 10
+          },
+          {
+            "name": "Homework 3",
+            "date": "2020-01-03",
+            "earned": 0,
+            "possible": 10
+          },
+          {"name": "Quiz 1", "date": "2020-01-04", "earned": 6, "possible": 20 },
+          {"name": "Exam 1", "date": "2020-01-05", "earned": 34, "possible": 50}
         ]
       }
     ]
@@ -122,44 +166,150 @@ We have two collections: `classes` and `teachers`. Teachers are duplicated in th
 #### Teachers Collection
 
 ```json
-[{
-      "name": "Elias",
-      "email": "elias@claimacademystl.com"
-      "password": "password"
-    },
-    {
-      "name": "Manav",
-      "email: "manavm@visionwebsoft.com",
-      "password: "JSisAwesome"
+[
+  {
+    "name": "elias",
+    "email": "elias@claimacademystl.com",
+    "password": "password"
+  },
+  {
+    "name": "manav",
+    "email": "manavm@visionwebsoft.com",
+    "password": "JSisAwesome"
+  },
+  {
+    "name": "ola",
+    "email": "ola@claimacademystl.com",
+    "password": "password",
+    "isAdmin": true
+  }
+]
+```
+
+### Students Collection
+
+```json
+[
+  {
+    "name": "John Doe",
+    "attendance": [
+      {
+        "date": "2020-01-01",
+        "present": "Left Early"
+      },
+      {
+        "date": "2020-01-02",
+        "present": "Present"
       }
+    ]
+  },
+  {
+    "name": "Jane Doe",
+    "attendance": [
+      {
+        "date": "2020-01-01",
+        "present": "Late"
+      },
+      {
+        "date": "2020-01-02",
+        "present": "Excused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-01",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-02",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-03",
+        "earned": 8,
+        "possible": 10
+      },
+      { "name": "Quiz 1", "date": "2020-01-04", "earned": 18, "possible": 20 },
+      { "name": "Exam 1", "date": "2020-01-05", "earned": 40, "possible": 50 }
+    ]
+  },
+  {
+    "name": "Jim Doe",
+    "attendance": [
+      {
+        "date": "2020-01-01",
+        "present": "Late"
+      },
+      {
+        "date": "2020-01-02",
+        "present": "Unexcused Absence"
+      }
+    ],
+    "grades": [
+      {
+        "name": "Homework 1",
+        "date": "2020-01-01",
+        "earned": 10,
+        "possible": 10
+      },
+      {
+        "name": "Homework 2",
+        "date": "2020-01-02",
+        "earned": 9,
+        "possible": 10
+      },
+      {
+        "name": "Homework 3",
+        "date": "2020-01-03",
+        "earned": 0,
+        "possible": 10
+      },
+      { "name": "Quiz 1", "date": "2020-01-04", "earned": 6, "possible": 20 },
+      { "name": "Exam 1", "date": "2020-01-05", "earned": 34, "possible": 50 }
+    ]
+  }
 ]
 ```
 
 ### Mongoose Schema
 
 ```js
-const AttendanceSchema = new mongoose.Schema({
-  date: { type: String, required: true },
-  present: { type: String, required: true }
+const attendanceSchema = new mongoose.Schema({
+  date: { type: Date, required: true },
+  present: { type: String, required: true },
 });
 
-const StudentSchema = new mongoose.Schema({
+const gradeSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  attendance: [AttendanceSchema]
+  date: { type: Date, required: true },
+  earned: { type: Number, required: true },
+  possible: { type: Number, required: true },
 });
 
-const TeacherSchema = new mongoose.Schema({
+const studentSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  attendance: [AttendanceSchema],
+});
+
+const userSchema = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true },
   password: { type: String, required: true },
+  isAdmin: { type: Boolean, default: false },
 });
 
-const ClassSchema = new mongoose.Schema({
+const classSchema = new mongoose.Schema({
   name: { type: String, required: true },
   description: { type: String, required: true },
   teacher: TeacherSchema,
-  students: [StudentSchema]
-});```
+  students: [StudentSchema],
+});
+```
 
 ## MVP API Endpoints
 
@@ -176,5 +326,13 @@ const ClassSchema = new mongoose.Schema({
 
 - [ ] `GET /api/classes` - Get all classes. Admin gets all. Teacher gets only their classes.
 - [ ] `POST /api/classes` - Create a class (admin only)
-- [ ] `PUT /api/classes/:classId` - Update a class (admin only). We can add students, teachers, updated the name and description. We can also update attendance.
+- [ ] `PUT /api/classes/:classId` - Update a class (admin only). We can add students, teachers, update the name and description. We can also update attendance.
 - [ ] `DELETE /api/classes/:classId` - Delete a class (admin only)
+
+### Students 🧑‍🎓
+
+- [ ] `GET /api/students` - Get all students. Admin gets all. Teacher gets only their students (across all classes).
+- [ ] `GET /api/students/student` - Get a student. Admin gets any. Teacher gets their own students.
+- [ ] `POST /api/students` - Create a student (admin only).
+- [ ] `PUT /api/students/:studentId` - Update a student. Admin updates any. Teacher updates their own students.
+- [ ] `DELETE /api/students/:studentId` - Delete a student (admin only)
