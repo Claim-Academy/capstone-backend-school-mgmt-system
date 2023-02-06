@@ -33,12 +33,32 @@ const controller = {
     const student = new Student({ firstName, lastName });
     return student.save();
   },
+
+  // 'newName' is an object with the new first and last name
+  async updateName(id, newName) {
+    const existingStudent = await Student.findById(id);
+
+    if (!existingStudent) {
+      throw new Error(`Student with id ${id} does not exist`);
+    }
+
+    // Use the || operator to only update the fields that are provided
+    existingStudent.firstName = newName.firstName || existingStudent.firstName;
+    existingStudent.lastName = newName.lastName || existingStudent.lastName;
+
+    return existingStudent.save();
+  },
 };
 
-const newStudent = await controller.register("John", "Doe").catch((err) => {
-  console.error(err.message);
-});
+const updatedStudent = await controller
+  .updateName("63e1356d9f728febcf837663", {
+    firstName: "Harry",
+    lastName: "Styles",
+  })
+  .catch((err) => {
+    console.error(err.message);
+  });
 
-console.log(newStudent);
+console.log(updatedStudent);
 
 export default controller;
