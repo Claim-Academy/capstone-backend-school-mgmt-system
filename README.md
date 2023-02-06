@@ -14,7 +14,7 @@ This concept is inspired by the very nice spreadsheet set up by Elias here at Cl
 
 - [ ] As a teacher, I want to be able to add a student to a class so that I can track their attendance.
 - [ ] As a teacher, when I login, I want to see a list of my classes so that I can select one to view.
-- [ ] As a teacher, when I select a class, I want to enter the data for capturing attendance (`["Present", "Late", "Left Early", "Excused Absence", "Unexcused Absence"`].
+- [ ] As a teacher, when I select a class, I want to enter the data for capturing attendance (`["Present", "Late", "Left Early", "Excused Absence", "Unexcused Absence"]`).
 - [ ] As a teacher, when I select a class, I want to see a list of students in that class.
 - [ ] As a teacher, when I select a student, I want to edit their name as well as see all of their grade information, including overall averages.
 - [ ] As a teacher, I want to be able to update my account information, such as my name and email.
@@ -56,6 +56,12 @@ This concept is inspired by the very nice spreadsheet set up by Elias here at Cl
 
 ## Data Sample and Schema
 
+The [seed data file is included here](./classes.json).
+We also have [students](./students.json) and [teachers](./teachers.json) data.
+Note that students and teachers are duplicated in the classes data.
+
+**Note:** Each teacher is only assigned to one class. This is a simplification of the data model. In reality, a teacher can be assigned to multiple classes.
+
 I am favoring an [embedded document approach](https://www.mongodb.com/basics/embedded-mongodb) for this project. It also makes it easier to query the data. This is the **general** approach that is used in MongoDB for small data sets.
 
 We have three collections: `classes`, `teachers`, and `students`. Teachers are duplicated in the classes. As this is not SQL, duplicated data in MongoDB is still favored over using `$lookup` and **joins.**
@@ -65,215 +71,392 @@ We have three collections: `classes`, `teachers`, and `students`. Teachers are d
 #### Class Collection
 
 ```json
-[
-  {
-    "name": "Full-stack Web Development",
-    "description": "This is a full-stack web development class.",
-    "teacher": {
-      "name": "Elias",
-      "email": "elias@claimacademystl.com"
-      "password": "password"
+{
+  "name": "Full-stack Web Development",
+  "description": "Learn to build full-stack web applications with React, Node, Express, and MongoDB.",
+  "teacher": {
+    "_id": "5f1b9b9e1c9d440000a5b1b1",
+    "firstName": "Elias",
+    "lastName": "Johnson",
+    "email": "elias.johnson@example.com",
+    "password": "password1",
+    "username": "elias.johnson"
+  },
+  "students": [
+    {
+      "_id": "96cbffbf-4e94-40b2-b72e-31d1eb0644f4",
+      "firstName": "Alba",
+      "lastName": "Mante",
+      "present": [
+        {
+          "date": "2022-01-09",
+          "present": "Excused Absence"
+        },
+        {
+          "date": "2022-01-10",
+          "present": "Left Early"
+        },
+        {
+          "date": "2022-01-11",
+          "present": "Late"
+        },
+        {
+          "date": "2022-01-12",
+          "present": "Present"
+        },
+        {
+          "date": "2022-01-13",
+          "present": "Unexcused Absence"
+        }
+      ],
+      "grades": [
+        {
+          "name": "Homework 1",
+          "date": "2020-01-09",
+          "earned": 8,
+          "possible": 10
+        },
+        {
+          "name": "Homework 2",
+          "date": "2020-01-10",
+          "earned": 5,
+          "possible": 10
+        },
+        {
+          "name": "Homework 3",
+          "date": "2020-01-11",
+          "earned": 8,
+          "possible": 10
+        },
+        {
+          "name": "Quiz 1",
+          "date": "2020-01-12",
+          "earned": 20,
+          "possible": 20
+        },
+        {
+          "name": "Exam 1",
+          "date": "2020-01-13",
+          "earned": 28,
+          "possible": 50
+        }
+      ]
     },
-    "students": [
-      {
-        "name": "John Doe",
-        "attendance": [
-          {
-            "date": "2020-01-01",
-            "present": "Left Early"
-          },
-          {
-            "date": "2020-01-02",
-            "present": "Present"
-          }
-        ]
-      },
-      {
-        "name": "Jane Doe",
-        "attendance": [
-          {
-            "date": "2020-01-01",
-            "present": "Late"
-          },
-          {
-            "date": "2020-01-02",
-            "present": "Excused Absence"
-          }
-        ],
-        "grades": [
-          {
-            "name": "Homework 1",
-            "date": "2020-01-01",
-            "earned": 10,
-            "possible": 10
-          },
-          {
-            "name": "Homework 2",
-            "date": "2020-01-02",
-            "earned": 9,
-            "possible": 10
-          },
-          {
-            "name": "Homework 3",
-            "date": "2020-01-03",
-            "earned": 8,
-            "possible": 10
-          },
-          {"name": "Quiz 1", "date": "2020-01-04", "earned": 18, "possible": 20 },
-          {"name": "Exam 1", "date": "2020-01-05", "earned": 40, "possible": 50}
-        ]
-      },
-      {
-        "name": "Jim Doe",
-        "attendance": [
-          {
-            "date": "2020-01-01",
-            "present": "Late"
-          },
-          {
-            "date": "2020-01-02",
-            "present": "Unexcused Absence"
-          }
-        ],
-        "grades": [
-          {
-            "name": "Homework 1",
-            "date": "2020-01-01",
-            "earned": 10,
-            "possible": 10
-          },
-          {
-            "name": "Homework 2",
-            "date": "2020-01-02",
-            "earned": 9,
-            "possible": 10
-          },
-          {
-            "name": "Homework 3",
-            "date": "2020-01-03",
-            "earned": 0,
-            "possible": 10
-          },
-          {"name": "Quiz 1", "date": "2020-01-04", "earned": 6, "possible": 20 },
-          {"name": "Exam 1", "date": "2020-01-05", "earned": 34, "possible": 50}
-        ]
-      }
-    ]
-  }
-]
+    {
+      "_id": "4c8d99da-bd20-4cf3-bcfd-76833cbdeccb",
+      "firstName": "Jefferey",
+      "lastName": "Kulas",
+      "present": [
+        {
+          "date": "2022-01-09",
+          "present": "Excused Absence"
+        },
+        {
+          "date": "2022-01-10",
+          "present": "Left Early"
+        },
+        {
+          "date": "2022-01-11",
+          "present": "Late"
+        },
+        {
+          "date": "2022-01-12",
+          "present": "Present"
+        },
+        {
+          "date": "2022-01-13",
+          "present": "Unexcused Absence"
+        }
+      ],
+      "grades": [
+        {
+          "name": "Homework 1",
+          "date": "2020-01-09",
+          "earned": 9,
+          "possible": 10
+        },
+        {
+          "name": "Homework 2",
+          "date": "2020-01-10",
+          "earned": 5,
+          "possible": 10
+        },
+        {
+          "name": "Homework 3",
+          "date": "2020-01-11",
+          "earned": 10,
+          "possible": 10
+        },
+        {
+          "name": "Quiz 1",
+          "date": "2020-01-12",
+          "earned": 12,
+          "possible": 20
+        },
+        {
+          "name": "Exam 1",
+          "date": "2020-01-13",
+          "earned": 41,
+          "possible": 50
+        }
+      ]
+    },
+    {
+      "_id": "c11bb91a-3a38-4690-b6be-8d565e13865d",
+      "firstName": "Thelma",
+      "lastName": "Raynor",
+      "present": [
+        {
+          "date": "2022-01-09",
+          "present": "Excused Absence"
+        },
+        {
+          "date": "2022-01-10",
+          "present": "Left Early"
+        },
+        {
+          "date": "2022-01-11",
+          "present": "Late"
+        },
+        {
+          "date": "2022-01-12",
+          "present": "Present"
+        },
+        {
+          "date": "2022-01-13",
+          "present": "Unexcused Absence"
+        }
+      ],
+      "grades": [
+        {
+          "name": "Homework 1",
+          "date": "2020-01-09",
+          "earned": 7,
+          "possible": 10
+        },
+        {
+          "name": "Homework 2",
+          "date": "2020-01-10",
+          "earned": 8,
+          "possible": 10
+        },
+        {
+          "name": "Homework 3",
+          "date": "2020-01-11",
+          "earned": 10,
+          "possible": 10
+        },
+        {
+          "name": "Quiz 1",
+          "date": "2020-01-12",
+          "earned": 17,
+          "possible": 20
+        },
+        {
+          "name": "Exam 1",
+          "date": "2020-01-13",
+          "earned": 29,
+          "possible": 50
+        }
+      ]
+    },
+    {
+      "_id": "67e65487-0ec8-4bdd-8aa5-06925ee8273e",
+      "firstName": "Cecile",
+      "lastName": "Hudson",
+      "present": [
+        {
+          "date": "2022-01-09",
+          "present": "Excused Absence"
+        },
+        {
+          "date": "2022-01-10",
+          "present": "Left Early"
+        },
+        {
+          "date": "2022-01-11",
+          "present": "Late"
+        },
+        {
+          "date": "2022-01-12",
+          "present": "Present"
+        },
+        {
+          "date": "2022-01-13",
+          "present": "Unexcused Absence"
+        }
+      ],
+      "grades": [
+        {
+          "name": "Homework 1",
+          "date": "2020-01-09",
+          "earned": 10,
+          "possible": 10
+        },
+        {
+          "name": "Homework 2",
+          "date": "2020-01-10",
+          "earned": 10,
+          "possible": 10
+        },
+        {
+          "name": "Homework 3",
+          "date": "2020-01-11",
+          "earned": 6,
+          "possible": 10
+        },
+        {
+          "name": "Quiz 1",
+          "date": "2020-01-12",
+          "earned": 18,
+          "possible": 20
+        },
+        {
+          "name": "Exam 1",
+          "date": "2020-01-13",
+          "earned": 43,
+          "possible": 50
+        }
+      ]
+    },
+    {
+      "_id": "d227599c-d56e-418e-a419-09bedd753f8c",
+      "firstName": "Era",
+      "lastName": "Beier",
+      "present": [
+        {
+          "date": "2022-01-09",
+          "present": "Excused Absence"
+        },
+        {
+          "date": "2022-01-10",
+          "present": "Left Early"
+        },
+        {
+          "date": "2022-01-11",
+          "present": "Late"
+        },
+        {
+          "date": "2022-01-12",
+          "present": "Present"
+        },
+        {
+          "date": "2022-01-13",
+          "present": "Unexcused Absence"
+        }
+      ],
+      "grades": [
+        {
+          "name": "Homework 1",
+          "date": "2020-01-09",
+          "earned": 7,
+          "possible": 10
+        },
+        {
+          "name": "Homework 2",
+          "date": "2020-01-10",
+          "earned": 6,
+          "possible": 10
+        },
+        {
+          "name": "Homework 3",
+          "date": "2020-01-11",
+          "earned": 10,
+          "possible": 10
+        },
+        {
+          "name": "Quiz 1",
+          "date": "2020-01-12",
+          "earned": 18,
+          "possible": 20
+        },
+        {
+          "name": "Exam 1",
+          "date": "2020-01-13",
+          "earned": 49,
+          "possible": 50
+        }
+      ]
+    }
+  ]
+}
 ```
 
 #### Teachers Collection
 
 ```json
-[
-  {
-    "name": "elias",
-    "email": "elias@claimacademystl.com",
-    "password": "password"
-  },
-  {
-    "name": "manav",
-    "email": "manavm@visionwebsoft.com",
-    "password": "JSisAwesome"
-  },
-  {
-    "name": "ola",
-    "email": "ola@claimacademystl.com",
-    "password": "password",
-    "isAdmin": true
-  }
-]
+{
+  "_id": "5f1b9b9e1c9d440000a5b1b1",
+  "firstName": "Elias",
+  "lastName": "Johnson",
+  "email": "elias.johnson@example.com",
+  "password": "password1",
+  "username": "elias.johnson"
+}
 ```
 
 ### Students Collection
 
 ```json
-[
-  {
-    "name": "John Doe",
-    "attendance": [
-      {
-        "date": "2020-01-01",
-        "present": "Left Early"
-      },
-      {
-        "date": "2020-01-02",
-        "present": "Present"
-      }
-    ]
-  },
-  {
-    "name": "Jane Doe",
-    "attendance": [
-      {
-        "date": "2020-01-01",
-        "present": "Late"
-      },
-      {
-        "date": "2020-01-02",
-        "present": "Excused Absence"
-      }
-    ],
-    "grades": [
-      {
-        "name": "Homework 1",
-        "date": "2020-01-01",
-        "earned": 10,
-        "possible": 10
-      },
-      {
-        "name": "Homework 2",
-        "date": "2020-01-02",
-        "earned": 9,
-        "possible": 10
-      },
-      {
-        "name": "Homework 3",
-        "date": "2020-01-03",
-        "earned": 8,
-        "possible": 10
-      },
-      { "name": "Quiz 1", "date": "2020-01-04", "earned": 18, "possible": 20 },
-      { "name": "Exam 1", "date": "2020-01-05", "earned": 40, "possible": 50 }
-    ]
-  },
-  {
-    "name": "Jim Doe",
-    "attendance": [
-      {
-        "date": "2020-01-01",
-        "present": "Late"
-      },
-      {
-        "date": "2020-01-02",
-        "present": "Unexcused Absence"
-      }
-    ],
-    "grades": [
-      {
-        "name": "Homework 1",
-        "date": "2020-01-01",
-        "earned": 10,
-        "possible": 10
-      },
-      {
-        "name": "Homework 2",
-        "date": "2020-01-02",
-        "earned": 9,
-        "possible": 10
-      },
-      {
-        "name": "Homework 3",
-        "date": "2020-01-03",
-        "earned": 0,
-        "possible": 10
-      },
-      { "name": "Quiz 1", "date": "2020-01-04", "earned": 6, "possible": 20 },
-      { "name": "Exam 1", "date": "2020-01-05", "earned": 34, "possible": 50 }
-    ]
-  }
-]
+{
+  "_id": "5c900785-ac72-4188-ab01-9889a574e8e9",
+  "firstName": "Jimmie",
+  "lastName": "White",
+  "present": [
+    {
+      "date": "2022-01-09",
+      "present": "Excused Absence"
+    },
+    {
+      "date": "2022-01-10",
+      "present": "Left Early"
+    },
+    {
+      "date": "2022-01-11",
+      "present": "Late"
+    },
+    {
+      "date": "2022-01-12",
+      "present": "Present"
+    },
+    {
+      "date": "2022-01-13",
+      "present": "Unexcused Absence"
+    }
+  ],
+  "grades": [
+    {
+      "name": "Homework 1",
+      "date": "2020-01-09",
+      "earned": 10,
+      "possible": 10
+    },
+    {
+      "name": "Homework 2",
+      "date": "2020-01-10",
+      "earned": 9,
+      "possible": 10
+    },
+    {
+      "name": "Homework 3",
+      "date": "2020-01-11",
+      "earned": 7,
+      "possible": 10
+    },
+    {
+      "name": "Quiz 1",
+      "date": "2020-01-12",
+      "earned": 13,
+      "possible": 20
+    },
+    {
+      "name": "Exam 1",
+      "date": "2020-01-13",
+      "earned": 20,
+      "possible": 50
+    }
+  ]
+}
 ```
 
 ### Mongoose Schema
@@ -281,7 +464,17 @@ We have three collections: `classes`, `teachers`, and `students`. Teachers are d
 ```js
 const attendanceSchema = new mongoose.Schema({
   date: { type: Date, required: true },
-  present: { type: String, required: true },
+  present: {
+    type: String,
+    required: true,
+    enum: [
+      "Present",
+      "Late",
+      "Left Early",
+      "Excused Absence",
+      "Unexcused Absence",
+    ],
+  },
 });
 
 const gradeSchema = new mongoose.Schema({
@@ -294,6 +487,7 @@ const gradeSchema = new mongoose.Schema({
 const studentSchema = new mongoose.Schema({
   name: { type: String, required: true },
   attendance: [AttendanceSchema],
+  grades: [GradeSchema],
 });
 
 const userSchema = new mongoose.Schema({
@@ -331,7 +525,7 @@ const classSchema = new mongoose.Schema({
 
 ### Students 🧑‍🎓
 
-- [ ] `GET /api/students` - Get all students. Admin gets all. Teacher gets only their students (across all classes).
+- [ ] `GET /api/students` - Get all students. Admin gets all. Teacher gets only their students (across all classes). When an admin clicks on a student, they can see all of their classes and average grades.
 - [ ] `GET /api/students/student` - Get a student. Admin gets any. Teacher gets their own students.
 - [ ] `POST /api/students` - Create a student (admin only).
 - [ ] `PUT /api/students/:studentId` - Update a student. Admin updates any. Teacher updates their own students.
