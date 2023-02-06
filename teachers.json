@@ -1,0 +1,59 @@
+[
+  {
+    "_id": "5f1b9b9e1c9d440000a5b1b1",
+    "firstName": "Elias",
+    "lastName": "Johnson",
+    "email": "elias.johnson@example.com",
+    "password": "password1",
+    "username": "elias.johnson"
+  },
+  {
+    "_id": "5f1b9b9e1c9d440000a5b1b2",
+    "firstName": "Sarah",
+    "lastName": "Smith",
+    "email": "sarah.smith@example.com",
+    "password": "password2",
+    "username": "sarah.smith"
+  },
+  {
+    "_id": "5f1b9b9e1c9d440000a5b1b3",
+    "firstName": "Michael",
+    "lastName": "Brown",
+    "email": "michael.brown@example.com",
+    "password": "password3",
+    "username": "michael.brown"
+  },
+  {
+    "_id": "5f1b9b9e1c9d440000a5b1b4",
+    "firstName": "Emily",
+    "lastName": "Davis",
+    "email": "emily.davis@example.com",
+    "password": "password4",
+    "username": "emily.davis"
+  },
+  {
+    "_id": "5f1b9b9e1c9d440000a5b1b5",
+    "firstName": "William",
+    "lastName": "Miller",
+    "email": "william.miller@example.com",
+    "password": "password5",
+    "username": "william.miller"
+  },
+  {
+    "_id": "5f1b9b9e1c9d440000a5b1b6",
+    "firstName": "Manav",
+    "lastName": "Mehra",
+    "email": "manavm@visionwebsoft.com",
+    "password": "JSisAwesome",
+    "username": "manavm"
+  },
+  {
+    "_id": "5f1b9b9e1c9d440000a5b1b7",
+    "firstName": "Ola",
+    "lastName": "Ayeni",
+    "email": "ola@claimacademystl.com",
+    "password": "password",
+    "username": "ola",
+    "isAdmin": true
+  }
+]
