@@ -16,7 +16,7 @@ This concept is inspired by the very nice spreadsheet set up by Elias here at Cl
 - [ ] As a teacher, when I login, I want to see a list of my classes so that I can select one to view.
 - [ ] As a teacher, when I select a class, I want to enter the data for capturing attendance (`["Present", "Late", "Left Early", "Excused Absence", "Unexcused Absence"`].
 - [ ] As a teacher, when I select a class, I want to see a list of students in that class.
-- [ ] As a teacher, when I select a student, I want to edit their name.
+- [ ] As a teacher, when I select a student, I want to edit their name as well as see all of their grade information, including overall averages.
 - [ ] As a teacher, I want to be able to update my account information, such as my name and email.
 - [ ] As a teacher, I want to be able to edit my class information, such as the name and description.
 
