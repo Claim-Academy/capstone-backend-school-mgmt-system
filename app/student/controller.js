@@ -16,6 +16,11 @@ const controller = {
   index() {
     return Student.find();
   },
+
+  show(id) {
+    return Student.findById(id);
+  },
+
   async register(firstName, lastName) {
     const students = await this.index();
 
