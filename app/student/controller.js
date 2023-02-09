@@ -39,6 +39,24 @@ const controller = {
     return student.save();
   },
 
+  async markAttendance(id, attendanceMark) {
+    const student = await this.show(id);
+
+    if (!student) {
+      throw new Error(`Student with id ${id} does not exist`);
+    }
+
+    const existingAttendanceI = student.attendance.findIndex(
+      (a) => a.date.getTime() === attendanceMark.date.getTime()
+    );
+
+    existingAttendanceI >= 0
+      ? (student.attendance[existingAttendanceI] = attendanceMark)
+      : (student.attendance = [...student.attendance, attendanceMark]);
+
+    return student.save();
+  },
+
   // 'newName' is an object with the new first and last name
   async updateName(id, newName) {
     const existingStudent = await Student.findById(id);
@@ -56,9 +74,9 @@ const controller = {
 };
 
 const updatedStudent = await controller
-  .updateName("63e1356d9f728febcf837663", {
-    firstName: "Harry",
-    lastName: "Styles",
+  .markAttendance("63e1356d9f728febcf837663", {
+    date: new Date("2022-01-09"),
+    present: "Excused Absence",
   })
   .catch((err) => {
     console.error(err.message);
